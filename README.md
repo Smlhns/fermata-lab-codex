@@ -6,8 +6,8 @@ Static temporary site for Fermata, a music intelligence lab.
 
 - `index.html` - the page to deploy
 - `styles.css` - all styling
-- `assets/fermata-blueprint.png` - custom visual asset
-- `assets/favicon.png` - browser icon
+- `assets/fermata-blueprint.svg` - custom visual asset
+- `assets/favicon.svg` - browser icon
 
 ## Deploy
 

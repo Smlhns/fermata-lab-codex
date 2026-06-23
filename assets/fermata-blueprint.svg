@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Fermata blueprint waveform</title>
+  <desc id="desc">A technical blueprint-style waveform moving through piano staff lines.</desc>
+  <defs>
+    <pattern id="grid-small" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#2a322f" stroke-opacity=".12" stroke-width="1"/>
+    </pattern>
+    <pattern id="grid-large" width="192" height="192" patternUnits="userSpaceOnUse">
+      <rect width="192" height="192" fill="url(#grid-small)"/>
+      <path d="M192 0H0V192" fill="none" stroke="#2a322f" stroke-opacity=".2" stroke-width="1.5"/>
+    </pattern>
+    <filter id="paper">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 .08"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="#f3f0e8"/>
+  <rect width="1600" height="1000" fill="url(#grid-large)"/>
+  <rect width="1600" height="1000" filter="url(#paper)" opacity=".45"/>
+  <g fill="none">
+    <rect x="70" y="70" width="1460" height="860" stroke="#18201f" stroke-opacity=".42" stroke-width="3"/>
+    <rect x="104" y="104" width="1392" height="792" stroke="#18201f" stroke-opacity=".18" stroke-width="2"/>
+    <path d="M115 530H1485" stroke="#18201f" stroke-opacity=".5" stroke-width="2"/>
+    <path d="M130 215L615 700" stroke="#ad6e4b" stroke-width="8" stroke-opacity=".9"/>
+    <path d="M120 700H760" stroke="#0b4a6f" stroke-width="7"/>
+    <g stroke="#18201f" stroke-width="3" stroke-opacity=".75">
+      <path d="M320 88V840"/><path d="M360 88V840"/><path d="M400 88V840"/>
+      <path d="M444 88V840"/><path d="M490 88V840"/>
+    </g>
+    <g stroke="#18201f" stroke-opacity=".42" stroke-width="2">
+      <path d="M752 320V740"/><path d="M928 320V740"/><path d="M1104 320V740"/>
+      <path d="M1280 320V740"/><path d="M1456 320V740"/>
+    </g>
+    <g stroke="#18201f" stroke-opacity=".5" stroke-width="2">
+      <path d="M752 380H1475"/><path d="M752 455H1475"/><path d="M752 530H1475"/>
+      <path d="M752 605H1475"/><path d="M752 680H1475"/>
+    </g>
+    <g stroke="#ad6e4b" stroke-opacity=".48" stroke-width="2">
+      <path d="M115 535C190 355 275 450 340 535S455 710 525 430 675 625 820 535"/>
+      <path d="M115 535C195 390 275 485 340 535S455 665 525 455 675 595 820 535"/>
+      <path d="M115 535C200 425 275 520 340 535S455 625 525 485 675 565 820 535"/>
+      <path d="M115 535C205 465 275 550 340 535S455 585 525 515 675 545 820 535"/>
+      <path d="M115 535C210 505 275 575 340 535S455 550 525 535 675 535 820 535"/>
+    </g>
+    <g stroke="#ad6e4b" stroke-opacity=".55" stroke-width="2">
+      <path d="M540 590C650 635 690 310 820 535S935 620 1010 535"/>
+      <path d="M540 575C655 615 695 350 820 535S935 595 1010 535"/>
+      <path d="M540 560C660 590 700 390 820 535S935 570 1010 535"/>
+      <path d="M540 545C665 570 705 430 820 535S935 550 1010 535"/>
+    </g>
+    <g stroke="#0b4a6f" stroke-opacity=".7" stroke-width="3">
+      <path d="M545 590C720 690 795 345 980 480S1200 730 1360 450 1500 500 1540 520"/>
+      <path d="M545 575C720 655 795 370 980 490S1200 685 1360 465 1500 505 1540 520"/>
+      <path d="M545 560C720 620 795 400 980 500S1200 645 1360 480 1500 510 1540 520"/>
+      <path d="M545 545C720 585 795 430 980 510S1200 605 1360 495 1500 515 1540 520"/>
+      <path d="M545 530C720 550 795 455 980 520S1200 565 1360 510 1500 520 1540 520"/>
+    </g>
+    <g stroke="#0b4a6f" stroke-width="3">
+      <circle cx="576" cy="530" r="8"/><circle cx="752" cy="530" r="8"/><circle cx="928" cy="530" r="8"/>
+      <circle cx="1104" cy="530" r="8"/><circle cx="1280" cy="530" r="8"/><circle cx="1456" cy="530" r="8"/>
+    </g>
+    <g fill="#101412">
+      <circle cx="320" cy="830" r="8"/><circle cx="496" cy="830" r="8"/><circle cx="1184" cy="830" r="8"/>
+    </g>
+    <g stroke-width="4" opacity=".7">
+      <path d="M1088 360a74 74 0 1 1 0 148" stroke="#ad6e4b"/>
+      <path d="M1156 360a74 74 0 1 1 0 148" stroke="#0b4a6f"/>
+      <path d="M1224 360a74 74 0 1 1 0 148" stroke="#ad6e4b"/>
+    </g>
+  </g>
+</svg>

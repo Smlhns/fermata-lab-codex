@@ -223,6 +223,16 @@ h1 {
   line-height: 1.48;
 }
 
+.ownership {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
 @media (max-width: 980px) {
   .hero {
     justify-content: flex-start;
